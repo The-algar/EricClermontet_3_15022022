@@ -1,0 +1,164 @@
+.main-location {
+    background: $darkenbg;
+    position: relative;
+    z-index: 2;
+    @media screen and(min-width:768px) {
+        background: white;
+    }
+    img{
+        object-fit: cover;
+        vertical-align: bottom;
+        height: 18em;
+        @media screen and (min-width: 768px) {
+            height: 35em;
+        }
+    }
+    .section-order {
+        position: relative;
+        top: -50px;
+        border-radius: 3em;
+        padding: 1.5em;
+        background: $darkenbg;
+        &::before{
+            @media screen and (min-width:768px){
+                @include box-shadow(2em);
+                content:"";
+                z-index: -1;
+                position: absolute;
+                border-radius: 3em;
+                top: 175px;
+                right: 0;
+                bottom: 0;
+                left: 0; 
+            }
+        }
+        @media screen and(min-width:768px) {
+            top: -175px;
+            width: 70%;
+            margin: auto;
+        }
+        &__title{
+            @include flexrow;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.5em 1em 1em 0;
+            @media screen and(min-width:768px) {
+                margin: 2em;
+                }
+            i{
+                margin: 0 0 0 0.5em;
+                font-size: $iconbig;
+            }
+        }
+        &__button {
+            @include flexrow;
+        }
+        .section-menu{
+            @media screen and(min-width:768px) {
+                margin: 0 4em 4em 4em;
+            }
+            //Block starters/ Main courses/ Desserts
+            .block-full-meal { 
+                animation: slide 1s ease-in-out both;
+                margin: 0 0 3em 0;
+                &--1{
+                    animation-delay: 0s;
+                }
+                @for $i from 2 through 3 {
+                    &--#{$i}{
+                        animation-delay: 0.8s * $i - 1;
+                    }
+                }
+                h2 {
+                    font-size: $fontsmall;
+                    font-weight: $weightlight;
+                    text-transform: uppercase;
+                    margin: 0 0 1.5em 0;
+                    @media screen and(min-width:768px) {
+                        font-size: $fontsmalldesktop;
+                    }
+                    span {
+                        border-bottom: 3px solid $success;
+                        padding: 0 0 0.2em 0;
+                    }
+                }
+                .block-meal {
+                    @include flexrow;
+                    justify-content: space-between;
+                    background: white;
+                    border-radius: 1em;
+                    overflow: hidden;
+                    margin: 0 0 1em 0;
+                    @include box-shadow(0.8em, 0.2em);
+                    position: relative;
+                    @media screen and(min-width:992px) {
+                        margin: 0 0 1em 0;
+                    }
+                    &:hover{
+                        & .block-meal__description{
+                            margin: 0 75px 0 0;
+                        }
+                        & .block-meal__check{
+                            transform: translateX(0);
+                            i{
+                                transform: rotate(0deg);
+                            }
+                        }
+                        & .block-meal__prices{
+                            transform: translateX(-75px);
+                        }
+                    }
+                    &__description {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        padding: 1em;
+                        transition: all $tickcheckanim ease-in-out;
+                        h3, dd{
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                    }
+                    &__prices {
+                        font-weight: $weightmedium;
+                        margin: auto 0 0 0;
+                        transform: translateX(0px);
+                        transition: all $tickcheckanim ease-in-out;
+                        transform-origin: right;
+                        padding: 0 1em 1em 0;
+                    }
+                    &__check {
+                        transform: translateX(75px);
+                        transition: all $tickcheckanim ease-in-out;
+                        transform-origin: right;
+                        position: absolute;
+                        right: 0;
+                        height: 100%;
+                        width: 70px;
+                        @include flexcolumn;
+                        color: white;
+                        background: $success;
+                        font-size: $iconbig;
+                        i {
+                            transform: rotate(360deg);
+                            transition: all $tickcheckanim ease-in-out 0.1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Animation de l'icon check
+@keyframes slide{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

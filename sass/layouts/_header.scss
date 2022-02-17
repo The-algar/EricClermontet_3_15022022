@@ -1,0 +1,20 @@
+.header{
+    @include flexcolumn;
+    position: relative;
+    &--shadow{
+        @include box-shadow(0.3em 0.2em);
+    }
+    .nav{
+        &__link{
+            position: absolute;
+            top: 58%;
+            transform: translate(0%, -50%);
+            left: 1em;
+            font-size: $iconbig;
+            color: $lightenfontcolor;
+            @media screen and (min-width:768px) {
+                left: 2em;
+            }
+        }
+    }   
+}

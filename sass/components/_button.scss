@@ -1,0 +1,23 @@
+.button{
+    padding: 1em;
+    margin: 1.5em;
+    border-radius: 5em;
+    background: $gradientcolor;
+    color: #FFFFFF;
+    @include box-shadow(0.5em, 0.2em);
+    &:hover{
+        background: $gradientcolorlighten;
+        @include box-shadow(0.5em, 0.2em, darken(#FFFFFF,30%))
+    }
+    &--maxpadding{
+        padding: 1em 3em;
+    }
+    &--shadowless{
+        @media screen and(min-width:768px) {
+            @include box-shadow(0.5em, 0.2em, darken(#FFFFFF,80%));
+            &:hover{
+                @include box-shadow(0.5em, 0.2em, darken(#FFFFFF,90%))
+            }
+        }
+    }
+}
