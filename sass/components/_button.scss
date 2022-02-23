@@ -6,7 +6,7 @@
     color: #FFFFFF;
     @include box-shadow(0.5em, 0.2em);
     &:hover{
-        background: $gradientcolorlighten;
+        background: $gradientcolor;
         @include box-shadow(0.5em, 0.2em, darken(#FFFFFF,30%))
     }
     &--maxpadding{

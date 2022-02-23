@@ -151,7 +151,7 @@ footer .nav-footer .footer-list__content i {
   box-shadow: #cccccc 0em 0.2em 0.5em;
 }
 .button:hover {
-  background: linear-gradient(180deg, #ff93e1, #9356DC);
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   box-shadow: #b3b3b3 0em 0.2em 0.5em;
 }
 .button--maxpadding {
