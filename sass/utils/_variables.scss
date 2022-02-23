@@ -1,9 +1,9 @@
 //Couleurs
-$primary:#9356DC;
+$primary: #9356DC;
 $primarylighten: lighten($primary,35%);
-$secondary:#FF79DA;
+$secondary: #FF79DA;
 $secondarylighten: lighten($secondary,35%);
-$success:#99E2D0;
+$success: #99E2D0;
 
 //button colours
 $gradientcolor: linear-gradient(180deg, $secondary, $primary);
