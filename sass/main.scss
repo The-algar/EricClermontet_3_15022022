@@ -1,0 +1,19 @@
+//Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+
+//Base
+@import "./base/reset";
+@import "./base/typo";
+
+//Layouts
+@import "./layouts/header";
+@import "./layouts/footer";
+
+//Components
+@import "./components/button";
+@import "./components/loader";
+
+//Pages
+@import "./pages/localization";
+@import "./pages/restaurants";

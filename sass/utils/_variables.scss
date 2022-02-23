@@ -1,0 +1,43 @@
+//Couleurs
+$primary:#9356DC;
+$primarylighten: lighten($primary,35%);
+$secondary:#FF79DA;
+$success:#99E2D0;
+$secondarylighten: lighten($secondary,5%);
+
+//button colours
+$gradientcolor: linear-gradient(180deg, $secondary, $primary);
+$gradientcolorlighten: linear-gradient(180deg, $secondarylighten, $primarylighten);
+
+$darkenbg: darken(#FFFFFF, 3%);
+
+//type
+$lightenfontcolor: lighten(black, 25%);
+
+$fontsmall: 1em;
+$fontsmalldesktop: $fontsmall*1.2;
+$fontmedium: 1.2em;
+$fontmediumdesktop: $fontmedium*1.2;
+$fontbig: 1.8em;
+$fontbigdesktop: $fontbig*1.2;
+
+$weightlight: 300;
+$weightmedium: 500;
+$weightbold: 700;
+
+//Icon
+$iconsmall: 1em;
+$iconbig: 1.5em;
+
+//logo animation size settings
+$sizelogo: 2em;
+$sizelogodesktop: $sizelogo*1.2;
+
+//Variable page restaurant tick price check
+$tickcheckanim: 0.5s;
+
+//Loader
+$falldelay: 0.2s;
+$translatedelay: $falldelay * 4;
+$bouncedelay: $translatedelay + 0.2s;
+$opacitydelay: $bouncedelay * 2.5;

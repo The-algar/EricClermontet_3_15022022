@@ -1,0 +1,45 @@
+footer{
+    background: lighten(black, 20%);
+    color: #FFFFFF;
+    padding: 1.5em;
+    font-size: $fontsmall;
+    font-weight: 300;
+    @media screen and(min-width:768px) {
+        padding: 3em;
+        @include flexcolumn;
+    }
+    h4{
+        font-size: $fontmedium;
+        @media screen and(min-width:768px) {
+            font-size: $fontmediumdesktop;
+        }
+    }
+    .nav-footer{
+        .footer-list{
+            margin: 1em 0 0 0;
+            @media screen and(min-width:768px) {
+                @include flexrow;
+            }
+            &__content{
+                display: flex;
+                margin: 0 0 0.5em 0;
+                @media screen and(min-width:768px) {
+                    margin: 10px;
+                }
+                &--big{
+                    font-weight: $weightmedium;
+                }
+                a {
+                    color: #FFFFFF;
+                }
+                i{
+                    @include flexrow;
+                    width: 1em;
+                    margin: 0 0.5em 0 0;
+                    font-size: $iconsmall;
+                }
+            }
+        }
+    }
+}
+
