@@ -7,7 +7,7 @@ $success:#99E2D0;
 
 //button colours
 $gradientcolor: linear-gradient(180deg, $secondary, $primary);
-$gradientcolorlighten: linear-gradient(180deg, $secondarylighten, $primarylighten);
+$gradientcolorlighten: linear-gradient(180deg, $primarylighten, $secondarylighten);
 
 $darkenbg: darken(#FFFFFF, 3%);
 
