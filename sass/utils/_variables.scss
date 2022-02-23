@@ -2,12 +2,12 @@
 $primary: #9356DC;
 $primarylighten: lighten($primary,35%);
 $secondary: #FF79DA;
-$secondarylighten: lighten($secondary,35%);
+$secondarylighten: lighten($secondary,5%);
 $success: #99E2D0;
 
 //button colours
 $gradientcolor: linear-gradient(180deg, $secondary, $primary);
-$gradientcolorlighten: linear-gradient(180deg, $secondarylighten, $primarylighten);
+$gradientcolorlighten: linear-gradient(180deg, $secondarylighten, $primary);
 
 $darkenbg: darken(#FFFFFF, 3%);
 
