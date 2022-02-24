@@ -271,9 +271,11 @@ footer .nav-footer .footer-list__content i {
 @-webkit-keyframes bounce-in-top {
   0% {
     transform: translateY(-700px);
+    opacity: 0;
   }
   38% {
     transform: translateY(0);
+    opacity: 1;
   }
   55% {
     transform: translateY(-24px);
@@ -288,9 +290,11 @@ footer .nav-footer .footer-list__content i {
 @keyframes bounce-in-top {
   0% {
     transform: translateY(-700px);
+    opacity: 0;
   }
   38% {
     transform: translateY(0);
+    opacity: 1;
   }
   55% {
     transform: translateY(-24px);
